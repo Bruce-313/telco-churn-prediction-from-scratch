@@ -8,30 +8,27 @@ This project predicts telecom customer churn using classical machine learning mo
 
 This repository contains the following files:
 
-- Group13_Telco_Churn_From_Scratch.py  
+* `Telco_Churn_From_Scratch.py`
   Main Python source code for data preprocessing, model implementation, model training, cross-validation, evaluation, and visualization.
 
-- Group13_Telco_Churn_Final_Report.pdf  
-  Final project report.
+* `Final_Report.pdf`
+  Final project report, including project background, dataset analysis, methodology, experimental results, and conclusions.
 
-- Telco_Churn_Presentation_Final.pptx  
-  Final presentation slides.
-
-- Dataset_Link.txt  
+* `Dataset_Link.txt`
   Dataset source and access information.
 
-- README.md  
+* `README.md`
   Project documentation.
 
 ## 3. Models Implemented From Scratch
 
 The project implements the following machine learning models from scratch:
 
-- Logistic Regression
-- Cost-Sensitive Logistic Regression
-- Gaussian Naive Bayes
-- Hybrid Naive Bayes
-- Decision Tree
+* Logistic Regression
+* Cost-Sensitive Logistic Regression
+* Gaussian Naive Bayes
+* Hybrid Naive Bayes
+* Decision Tree
 
 The implementation does not use scikit-learn, TensorFlow, Keras, or other prebuilt machine learning model libraries.
 
@@ -39,33 +36,33 @@ The implementation does not use scikit-learn, TensorFlow, Keras, or other prebui
 
 This project uses:
 
-- Python
-- NumPy
-- Pandas
-- Matplotlib
+* Python
+* NumPy
+* Pandas
+* Matplotlib
 
 ## 5. How to Run the Code
 
 Recommended environment:
 
-- Python 3.9 or newer
-- numpy
-- pandas
-- matplotlib
+* Python 3.9 or newer
+* numpy
+* pandas
+* matplotlib
 
 Install the required libraries:
 
 pip install numpy pandas matplotlib
 
-Download the dataset according to the information in Dataset_Link.txt.
+Download the dataset according to the information in `Dataset_Link.txt`.
 
 Place the dataset CSV file in the same folder as:
 
-Group13_Telco_Churn_From_Scratch.py
+`Telco_Churn_From_Scratch.py`
 
 Then run the Python file:
 
-python Group13_Telco_Churn_From_Scratch.py
+python Telco_Churn_From_Scratch.py
 
 ## 6. Expected Outputs
 
