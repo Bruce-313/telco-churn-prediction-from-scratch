@@ -1,71 +1,84 @@
-﻿Group 13 - AI3013 Machine Learning Course Project
-Telecom Customer Churn Prediction Using Machine Learning Models
+# Telecom Customer Churn Prediction Using Machine Learning Models From Scratch
 
-1. Project Overview
-This project predicts telecom customer churn using classical machine learning models
-implemented from scratch. The problem is a binary classification task: predict whether
-a customer will churn based on demographic, service, contract, and billing attributes.
+## 1. Project Overview
 
-2. Submission Contents
-Final_Report/
-  Group13_Telco_Churn_Final_Report.pdf
-  Group13_Telco_Churn_Final_Report.docx
+This project predicts telecom customer churn using classical machine learning models implemented from scratch. The task is a binary classification problem: predicting whether a customer will churn based on demographic, service, contract, and billing information.
 
-Presentation/
-  Telco_Churn_Presentation_Final.pptx
+## 2. Repository Contents
 
-Code/
-  Group13_Telco_Churn_From_Scratch.py
-  WA_Fn-UseC_-Telco-Customer-Churn.csv
-  requirements.txt
-  outputs/
+This repository contains the following files:
 
-Dataset_Link.txt
-Submission_Checklist.txt
+- Group13_Telco_Churn_From_Scratch.py  
+  Main Python source code for data preprocessing, model implementation, model training, cross-validation, evaluation, and visualization.
 
-3. Implementation Notes
-The code implements the following models from scratch:
+- Group13_Telco_Churn_Final_Report.pdf  
+  Final project report.
+
+- Telco_Churn_Presentation_Final.pptx  
+  Final presentation slides.
+
+- Dataset_Link.txt  
+  Dataset source and access information.
+
+- README.md  
+  Project documentation.
+
+## 3. Models Implemented From Scratch
+
+The project implements the following machine learning models from scratch:
+
 - Logistic Regression
 - Cost-Sensitive Logistic Regression
 - Gaussian Naive Bayes
 - Hybrid Naive Bayes
 - Decision Tree
 
-The implementation does not use scikit-learn, TensorFlow, Keras, or any prebuilt
-machine learning model library. It uses only:
+The implementation does not use scikit-learn, TensorFlow, Keras, or other prebuilt machine learning model libraries.
+
+## 4. Tools and Libraries
+
+This project uses:
+
+- Python
 - NumPy
 - Pandas
 - Matplotlib
 
-4. How to Run the Code
+## 5. How to Run the Code
+
 Recommended environment:
+
 - Python 3.9 or newer
 - numpy
 - pandas
 - matplotlib
 
-Install dependencies:
+Install the required libraries:
 
 pip install numpy pandas matplotlib
 
-Run the code:
+Download the dataset according to the information in Dataset_Link.txt.
+
+Place the dataset CSV file in the same folder as:
+
+Group13_Telco_Churn_From_Scratch.py
+
+Then run the Python file:
 
 python Group13_Telco_Churn_From_Scratch.py
 
-The dataset file must remain in the same Code folder:
-WA_Fn-UseC_-Telco-Customer-Churn.csv
+## 6. Expected Outputs
 
-5. Expected Outputs
-The script loads and preprocesses the dataset, performs EDA, trains all five models,
-runs stratified 5-fold cross-validation, evaluates multiple metrics, performs threshold
-analysis, analyzes generalization gap, and generates figures/tables in Code/outputs/.
+The script loads and preprocesses the dataset, performs exploratory data analysis, trains five machine learning models, runs stratified 5-fold cross-validation, evaluates different performance metrics, performs threshold analysis, analyzes generalization performance, and generates result figures or tables.
 
-6. Main Experimental Conclusion
-Cost-Sensitive Logistic Regression achieves the best F1-score and is recommended when
-the business objective is to identify more high-risk churn customers for retention.
-Standard Logistic Regression achieves the highest accuracy and strong ROC-AUC.
-Gaussian Naive Bayes achieves the highest recall but produces more false positives.
+## 7. Main Experimental Conclusion
 
-7. Reproducibility Notes
-The random seed is fixed in the source code. Preprocessing avoids data leakage by fitting
-standardization parameters inside each training fold only.
+Cost-Sensitive Logistic Regression performs well for identifying high-risk churn customers and is useful when the business goal is customer retention.
+
+Standard Logistic Regression achieves strong overall accuracy and stability.
+
+Gaussian Naive Bayes achieves high recall, but it may also produce more false positives.
+
+## 8. Reproducibility Notes
+
+The random seed is fixed in the source code. The preprocessing process avoids data leakage by fitting standardization parameters inside each training fold only.
