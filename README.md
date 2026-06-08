@@ -44,11 +44,12 @@ Recommended environment:
 - pandas
 - matplotlib
 
-Install dependencies if needed:
-pip install -r Code/requirements.txt
+Install dependencies:
 
-Run from the submission root:
-cd Code
+pip install numpy pandas matplotlib
+
+Run the code:
+
 python Group13_Telco_Churn_From_Scratch.py
 
 The dataset file must remain in the same Code folder:
