@@ -1,0 +1,18 @@
+﻿Dataset: IBM Telco Customer Churn Dataset
+
+Public source:
+https://www.kaggle.com/datasets/blastchar/telco-customer-churn
+
+Included data file:
+Code/WA_Fn-UseC_-Telco-Customer-Churn.csv
+
+Target column:
+Churn
+
+Task type:
+Binary classification, where Churn = Yes is encoded as 1 and Churn = No is encoded as 0.
+
+Brief description:
+The dataset contains customer demographic attributes, telecom service subscriptions,
+contract information, billing/payment variables, tenure, monthly charges, total charges,
+and whether the customer churned.
